@@ -1,0 +1,26 @@
+<ion-header class="ion-no-border" translucent>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button text="Regresar" defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title class="ion-text-capitalize">{{ titulo }}</ion-title>
+
+    <ion-buttons slot="end" *ngIf="avatar">
+      <ion-avatar>
+        <img src="assets/stan-lee.jpg" alt="Stand Lee">
+      </ion-avatar>
+    </ion-buttons>
+
+    <ion-buttons slot="end" *ngIf="buttons">
+      <ion-button color="primary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>

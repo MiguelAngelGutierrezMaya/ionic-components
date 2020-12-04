@@ -1,0 +1,22 @@
+<app-header [titulo]="'Avatar'" [avatar]="true"></app-header>
+
+<ion-content>
+  <ion-content class="ion-padding">
+
+    <ion-chip color="primary" *ngFor="let i of [1,1,1,1,1,1]">
+      <ion-avatar>
+        <img src="assets/stan-lee.jpg" alt="Stand Lee">
+      </ion-avatar>
+      <ion-label>Stan Lee</ion-label>
+    </ion-chip>
+
+    <ion-list>
+      <ion-item *ngFor="let i of [1,1,1,1,1,1]">
+        <ion-avatar slot="start">
+          <img src="assets/stan-lee.jpg" alt="Stand Lee">
+        </ion-avatar>
+        <ion-label>Stan Lee</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-content>
